@@ -1,12 +1,12 @@
 # hkAlium - UICollectionView with different cell sizes
 
 ## What is it?
-This lib allows you to set cells with diferent heights on the same **UICollectionView vertical flow**. See the picture below: 
+This lib allows you to set cells with different heights on the same **UICollectionView vertical flow**. See the picture below: 
 
 ![Image 01](https://github.com/heuristisk/hkAlium/blob/master/sample/demo.png?raw=true)
 
 ## How it works?
-The vertical flow follow a logic presented below determined by the number of specified columns, independent of the cell sizes.
+The vertical flow follows a logic presented below determined by the number of specified columns, independent of the cell sizes.
 
 ![Image 01](https://github.com/heuristisk/hkAlium/blob/master/sample/how-it-works.png?raw=true)
 
@@ -26,13 +26,13 @@ Example:
 
 ## How to setup it?
 
-First you need to implement an UICollectionView and latter you must set a custom layout as you can see in the image below:  
+First, you need to implement a UICollectionView and latter you must set a custom layout as you can see in the image below:   
 
 ![Image 01](https://github.com/heuristisk/hkAlium/blob/master/sample/setup.png?raw=true)
 
 ## Complete example
 
-If you want to see it running, clone de repo and execute the included sample project. The example is self-explained, you must implement a delegate *CustomLayoutDelegate* to specify the size of each item. Good luck! 
+If you want to see it running, clone the repo and execute the included sample project. The example is self-explained, you must implement a delegate CustomLayoutDelegate to specify the size of each item. Good luck!
 
 ```swift
 // ViewController.swift
