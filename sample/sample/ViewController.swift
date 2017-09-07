@@ -27,15 +27,15 @@ class ViewController: UICollectionViewController, CustomLayoutDelegate {
         var isBig: Bool
     }
     
-    private let dataSet = [Model(index: 1, isBig: true), Model(index: 2, isBig: false), Model(index: 3, isBig: false),
-                           Model(index: 4, isBig: true), Model(index: 5, isBig: true), Model(index: 6, isBig: false),
+    private let dataSet = [Model(index: 1, isBig: false), Model(index: 2, isBig: false), Model(index: 3, isBig: false),
+                           Model(index: 4, isBig: false), Model(index: 5, isBig: false), Model(index: 6, isBig: false),
                            Model(index: 7, isBig: false), Model(index: 8, isBig: false), Model(index: 9, isBig: false),
-                           Model(index: 10, isBig: false), Model(index: 11, isBig: false), Model(index: 12, isBig: true)]
+                           Model(index: 10, isBig: false), Model(index: 11, isBig: false), Model(index: 12, isBig: false)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.customCollectionViewLayout?.delegate = self
-        self.customCollectionViewLayout?.numberOfColumns = 1
+        self.customCollectionViewLayout?.numberOfColumns = 3
         //self.customCollectionViewLayout?.cellPadding = 30
     }
     
