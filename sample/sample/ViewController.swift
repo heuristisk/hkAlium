@@ -35,7 +35,7 @@ class ViewController: UICollectionViewController, CustomLayoutDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.customCollectionViewLayout?.delegate = self
-        self.customCollectionViewLayout?.numberOfColumns = 2
+        self.customCollectionViewLayout?.numberOfColumns = 1
         //self.customCollectionViewLayout?.cellPadding = 30
     }
     
