@@ -26,9 +26,13 @@ Example:
 
 ##How to setup it
 
-First you need to implement an UICollectionView and latter you must set a custom layout as you see in the image below:  
+First you need to implement an UICollectionView and latter you must set a custom layout as you can see in the image below:  
 
 ![Image 01](https://github.com/heuristisk/hkAlium/blob/master/sample/setup.png?raw=true)
+
+##Complete sample code
+
+If you want to see it running, clone de repo and execute the included sample project. The example is self-explained, you must implement a delegate *CustomLayoutDelegate* to specify the size of each item. Good luck! 
 
 ```swift
 // ViewController.swift
@@ -54,14 +58,14 @@ class ViewController: UICollectionViewController, CustomLayoutDelegate {
     }
     
     private let dataSet = [Model(index: 1, isBig: false), Model(index: 2, isBig: false), Model(index: 3, isBig: false),
-                           Model(index: 4, isBig: false), Model(index: 5, isBig: false), Model(index: 6, isBig: false),
+                           Model(index: 4, isBig: true), Model(index: 5, isBig: false), Model(index: 6, isBig: false),
                            Model(index: 7, isBig: false), Model(index: 8, isBig: false), Model(index: 9, isBig: false),
                            Model(index: 10, isBig: false), Model(index: 11, isBig: false), Model(index: 12, isBig: false)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.customCollectionViewLayout?.delegate = self
-        self.customCollectionViewLayout?.numberOfColumns = 3
+        self.customCollectionViewLayout?.numberOfColumns = 2
         //self.customCollectionViewLayout?.cellPadding = 30
     }
     
