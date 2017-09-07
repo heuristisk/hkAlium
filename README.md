@@ -10,7 +10,7 @@ The vertical flow follow a logic presented below determined by the number of spe
 
 ![Image 01](https://github.com/heuristisk/hkAlium/blob/master/sample/how-it-works.png?raw=true)
 
-##How to import it
+## How to import it?
 
 Add the pod 'hkAlium' in your podfile or just copy the UICustomCollectionViewLayout.swift file in your project:
 
@@ -24,13 +24,13 @@ Example:
 >   pod 'hkAlium'
 > end
 
-##How to setup it
+## How to setup it?
 
 First you need to implement an UICollectionView and latter you must set a custom layout as you can see in the image below:  
 
 ![Image 01](https://github.com/heuristisk/hkAlium/blob/master/sample/setup.png?raw=true)
 
-##Complete sample code
+## Complete example
 
 If you want to see it running, clone de repo and execute the included sample project. The example is self-explained, you must implement a delegate *CustomLayoutDelegate* to specify the size of each item. Good luck! 
 
